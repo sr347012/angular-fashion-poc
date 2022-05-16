@@ -1,0 +1,30 @@
+<h1>Orders List</h1>
+<div class="ol-create">
+    <button mat-button routerLink="/create">
+        <mat-icon>add</mat-icon> Create </button></div>
+<div class="ol">
+    <div class="ol-heading">
+        <h5>Order Id</h5>
+        <h5>Customer Name</h5>
+        <h5>Contact</h5>
+        <div>
+            <!-- <mat-icon class="p-2 low-opacity">visibility</mat-icon> -->
+            <mat-icon class="p-2 low-opacity">edit</mat-icon>
+            <!-- <mat-icon class="p-2 low-opacity">delete</mat-icon> -->
+        </div>
+
+    </div>
+
+    <div *ngFor="let order of orders" class="ol-detail"  routerLink="/orders/{{order.id}}">
+        <span>{{order.id}}</span>
+        <span>{{order.name}}</span>
+        <span>{{order.contact}}</span>
+        <div >
+            <!-- <button class="ol-button" routerLink="/orders/{{order.id}}">
+                <mat-icon class="p-2 ">visibility</mat-icon></button> -->
+            <button class="ol-button"><mat-icon class="p-2 ">edit</mat-icon></button>
+            <!-- <button class="ol-button"><mat-icon class="p-2 ">delete</mat-icon></button> -->
+        </div>
+    </div>
+</div>
+

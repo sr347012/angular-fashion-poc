@@ -1,0 +1,44 @@
+
+.in-fields {
+   margin-left: 50px;
+    width: 300px;
+    height: 350px;
+    /* margin-left: 300px;
+    margin-top: 200px; */
+  
+    border: lightgray 1px solid;
+    box-shadow: 1px 1px 5px rgb(55, 55, 55);
+}
+label {
+    width: 40%;
+}
+input {
+    width: 10%;
+}
+.flex {
+    display: flex;
+}
+.p-2{
+    padding: 10px;
+    margin: 10px;
+
+}
+#two {
+    /* color: whitesmoke; */
+    position: absolute;
+    right: 10%;
+    top:0px;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+}
+
+#rightArc {
+    /* stroke-dasharray: 10px; */
+}
+
+
+
+#leftArc {
+    stroke-dasharray: 10px;
+}

@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1 {
+    text-align: center;
+  }
