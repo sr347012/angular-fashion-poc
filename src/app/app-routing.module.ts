@@ -10,7 +10,7 @@ import { CreateComponent } from './create/create.component';
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent
+    component: OrdersComponent
   },
   {
     path: 'login',
@@ -19,17 +19,17 @@ const routes: Routes = [
   {
     path: 'orders',
     component: OrdersComponent,
-    canActivate: [ AuthGuard ]
+    // canActivate: [ AuthGuard ]
   },
   {
     path: 'orders/:id',
     component: OrderDetailComponent,
-    canActivate: [ AuthGuard ]
+    // canActivate: [ AuthGuard ]
   },
   {
     path: 'create',
     component: CreateComponent,
-    canActivate: [ AuthGuard ]
+    // canActivate: [ AuthGuard ]
   },
 ];
 
