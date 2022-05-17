@@ -1,19 +1,22 @@
 
 .in-fields {
    margin-left: 50px;
+   margin-top: 50px;
     width: 300px;
     height: 350px;
     /* margin-left: 300px;
     margin-top: 200px; */
   
     border: lightgray 1px solid;
-    box-shadow: 1px 1px 5px rgb(55, 55, 55);
+    box-shadow: 3px 3px 3px rgb(55, 55, 55,0.5);
 }
 label {
     width: 40%;
+    margin-right: 50px;
 }
 input {
-    width: 10%;
+    width: 50px;
+    border-radius: 5px;
 }
 .flex {
     display: flex;
@@ -41,4 +44,7 @@ input {
 
 #leftArc {
     stroke-dasharray: 10px;
+}
+.mat-tab-nav-bar, .mat-tab-header {
+    border: none !important;
 }

@@ -64,5 +64,5 @@ export class OrderDetailComponent implements OnInit {
     this.armRoundHeight = this.orders[0].design[0].armroundheight
     this.neckHeight = this.orders[0].design[0].neckheight
   }
-
+ 
 }

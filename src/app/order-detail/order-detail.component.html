@@ -1,37 +1,121 @@
 <h1>Order details</h1>
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Back "> 
+        <!-- <div class="in-fields "> -->
+            <div class="p-2">
+                <label for="" class="label"> Length:  </label>
+                <input id="length" name="length" [(ngModel)]="length"
+                type="text" class="input" contenteditable="true">
+            </div>         
+            <div class="p-2">
+                <label for="" class="label"> Chest:  </label>
+                <input id="chest" name="chest" [(ngModel)]="chest" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Waist:  </label>
+                <input id="waist" name="waist" [(ngModel)]="waist" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Neck Height:  </label>
+                <input id="neckHeight" name="neckHeight" [(ngModel)]="neckHeight" 
+                type="text" class="input" contenteditable="true">
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Arm round:  </label>
+                <input id="armRound" name="armRound" [(ngModel)]="armRound" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Arm round Height:  </label>
+                <input id="armRoundHeight" name="armRoundHeight" [(ngModel)]="armRoundHeight" 
+                type="text" class="input" contenteditable="true">                   
+            </div>        
+        <!-- </div> -->
 
-<div class="in-fields">
-    <div class="p-2">
-        <label for="" class="label"> Length:  </label>
-        <input id="length" name="length" [(ngModel)]="length"
-        type="text" class="input" contenteditable="true">     
-    <div class="p-2">
-        <label for="" class="label"> Chest:  </label>
-        <input id="chest" name="chest" [(ngModel)]="chest" 
-        type="text" class="input" contenteditable="true">            
-    </div>
-    <div class="p-2">
-        <label for="" class="label"> Waist:  </label>
-        <input id="waist" name="waist" [(ngModel)]="waist" 
-        type="text" class="input" contenteditable="true">            
-    </div>
-    <div class="p-2">
-        <label for="" class="label"> Neck Height:  </label>
-        <input id="neckHeight" name="neckHeight" [(ngModel)]="neckHeight" 
-        type="text" class="input" contenteditable="true">
-    </div>
-    <div class="p-2">
-        <label for="" class="label"> Arm round:  </label>
-        <input id="armRound" name="armRound" [(ngModel)]="armRound" 
-        type="text" class="input" contenteditable="true">            
-    </div>
-    <div class="p-2">
-        <label for="" class="label"> Arm round Height:  </label>
-        <input id="armRoundHeight" name="armRoundHeight" [(ngModel)]="armRoundHeight" 
-        type="text" class="input" contenteditable="true">                   
-    </div>
-
-</div>
+    </mat-tab>
+    <mat-tab label="Front "> 
+        <!-- <div class="in-fields "> -->
+            <div class="p-2">
+                <label for="" class="label"> Front Length:  </label>
+                <input id="length" name="length" [(ngModel)]="length"
+                type="text" class="input" contenteditable="true">
+            </div>         
+            <div class="p-2">
+                <label for="" class="label"> Front Chest:  </label>
+                <input id="chest" name="chest" [(ngModel)]="chest" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Front Waist:  </label>
+                <input id="waist" name="waist" [(ngModel)]="waist" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Front Neck Height:  </label>
+                <input id="neckHeight" name="neckHeight" [(ngModel)]="neckHeight" 
+                type="text" class="input" contenteditable="true">
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Front Arm round:  </label>
+                <input id="armRound" name="armRound" [(ngModel)]="armRound" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Arm round Height:  </label>
+                <input id="armRoundHeight" name="armRoundHeight" [(ngModel)]="armRoundHeight" 
+                type="text" class="input" contenteditable="true">                   
+            </div>        
+        <!-- </div> -->
+    </mat-tab>
+    <mat-tab label="Sleeve">   
+        <!-- <div class="in-fields "> -->
+            <div class="p-2">
+                <label for="" class="label"> Side Length:  </label>
+                <input id="length" name="length" [(ngModel)]="length"
+                type="text" class="input" contenteditable="true">
+            </div>         
+            <div class="p-2">
+                <label for="" class="label"> Side Chest:  </label>
+                <input id="chest" name="chest" [(ngModel)]="chest" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Side Waist:  </label>
+                <input id="waist" name="waist" [(ngModel)]="waist" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Side Neck Height:  </label>
+                <input id="neckHeight" name="neckHeight" [(ngModel)]="neckHeight" 
+                type="text" class="input" contenteditable="true">
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Arm round:  </label>
+                <input id="armRound" name="armRound" [(ngModel)]="armRound" 
+                type="text" class="input" contenteditable="true">            
+            </div>
+            <div class="p-2">
+                <label for="" class="label"> Arm round Height:  </label>
+                <input id="armRoundHeight" name="armRoundHeight" [(ngModel)]="armRoundHeight" 
+                type="text" class="input" contenteditable="true">                   
+            </div>        
+        <!-- </div> -->
+    </mat-tab>
+    <mat-tab label="Patti">
+        <div class="p-2">
+            <label for="" class="label"> Arm round:  </label>
+            <input id="armRound" name="armRound" [(ngModel)]="armRound" 
+            type="text" class="input" contenteditable="true">            
+        </div>
+        <div class="p-2">
+            <label for="" class="label"> Arm round Height:  </label>
+            <input id="armRoundHeight" name="armRoundHeight" [(ngModel)]="armRoundHeight" 
+            type="text" class="input" contenteditable="true">                   
+        </div>        
+    </mat-tab>
+  </mat-tab-group>
 
 
 <div>

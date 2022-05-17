@@ -2,10 +2,14 @@
   <span>
     <button mat-button routerLink="/" id="title">{{title}}</button>
     <button mat-button routerLink="/orders" *ngIf="isAuthenticated">
-      <mat-icon>menu</mat-icon> My Orders</button>
+      <mat-icon>list</mat-icon> My Orders</button>
   </span>
 
   <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <span>
+      <button mat-button routerLink="/orders" *ngIf="isAuthenticated">
+        <mat-icon>person</mat-icon> Maya Philip</button>
+    </span>
     <button mat-button routerLink="/login" *ngIf="!isAuthenticated">
       <mat-icon>power_settings_new</mat-icon>
       Login
