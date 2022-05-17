@@ -25,6 +25,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateComponent } from './create/create.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { CommonModule } from '@angular/common';
 // const oktaAuth = new OktaAuth({
 //   issuer: 'https://dev-28004049.okta.com/oauth2/default',
 //   clientId: '0oa4vpgj84ZBzv2Xg5d7',
@@ -57,7 +58,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatSlideToggleModule,
     MatSelectModule,
     MatOptionModule,
-    MatTabsModule
+    MatTabsModule,
+    CommonModule
   ],
   providers: [
     {

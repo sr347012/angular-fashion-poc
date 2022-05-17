@@ -1,6 +1,6 @@
 <h1>Order details</h1>
-<mat-tab-group mat-align-tabs="start">
-    <mat-tab label="Back "> 
+<mat-tab-group class="tabGroup" mat-align-tabs="start">
+    <mat-tab label="Back " (click)="checkActiveGraph('back')"> 
         <!-- <div class="in-fields "> -->
             <div class="p-2">
                 <label for="" class="label"> Length:  </label>
@@ -19,8 +19,8 @@
             </div>
             <div class="p-2">
                 <label for="" class="label"> Neck Height:  </label>
-                <input id="neckHeight" name="neckHeight" [(ngModel)]="neckHeight" 
-                type="text" class="input" contenteditable="true">
+                <input id="neckHeight" name="neckHeight" [(ngModel)]="neckHeight" (change)="reDraw()"
+                type="text" class="input" contenteditable="true"> ((---change here--))
             </div>
             <div class="p-2">
                 <label for="" class="label"> Arm round:  </label>
@@ -33,9 +33,8 @@
                 type="text" class="input" contenteditable="true">                   
             </div>        
         <!-- </div> -->
-
     </mat-tab>
-    <mat-tab label="Front "> 
+    <mat-tab label="Front " (click)="checkActiveGraph('front')"> 
         <!-- <div class="in-fields "> -->
             <div class="p-2">
                 <label for="" class="label"> Front Length:  </label>
@@ -69,7 +68,7 @@
             </div>        
         <!-- </div> -->
     </mat-tab>
-    <mat-tab label="Sleeve">   
+    <mat-tab label="Sleeve" (click)="checkActiveGraph('sleeve')">   
         <!-- <div class="in-fields "> -->
             <div class="p-2">
                 <label for="" class="label"> Side Length:  </label>
@@ -99,11 +98,11 @@
             <div class="p-2">
                 <label for="" class="label"> Arm round Height:  </label>
                 <input id="armRoundHeight" name="armRoundHeight" [(ngModel)]="armRoundHeight" 
-                type="text" class="input" contenteditable="true">                   
+                type="text" class="input" contenteditable="true">                  
             </div>        
         <!-- </div> -->
     </mat-tab>
-    <mat-tab label="Patti">
+    <mat-tab label="Patti" (click)="checkActiveGraph('patti')">
         <div class="p-2">
             <label for="" class="label"> Arm round:  </label>
             <input id="armRound" name="armRound" [(ngModel)]="armRound" 
@@ -114,12 +113,11 @@
             <input id="armRoundHeight" name="armRoundHeight" [(ngModel)]="armRoundHeight" 
             type="text" class="input" contenteditable="true">                   
         </div>        
+        
     </mat-tab>
   </mat-tab-group>
-
-
-<div>
-    <svg id="two" width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div >
+    <svg class="graph" width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="325.5" y1="451" x2="325.5" y2="701" stroke="black"/>
         <line x1="325.5" y1="701" x2="325.5" y2="760" stroke="black"/>
         <line x1="778.471" y1="700.832" x2="799.471" y2="759.832" stroke="black"/>
@@ -132,7 +130,7 @@
         <path id="leftArc" 
         d="M468 118C520 423 416 455 326 451" stroke="black"/>
         <path id="leftArcRed" 
-        d="M480 118C520 423 416 455 326 461" stroke="red"/>
+        d="M465 118C520 423 516 455 326 461" stroke="red"/>
         <path id="rightArc" d="M558 128.5C569.659 367.939 630.862 404.195 779 399" stroke="black"/>
         <!-- <foreignObject width="850" height="850" x="0" y="0" id="my-form">
             <label for="" class="label">Top X  </label>
@@ -153,4 +151,15 @@
             <input id="btmY"  name="btmY-ph" type="text" class="input" contenteditable="true">
           </foreignObject> -->
         </svg>            
+</div>
+<div *ngIf="pattiActive | async">
+    <svg class="graph" width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Patti" >
+        <line id="lv" x1="325.5" y1="451" x2="325.5" y2="701" stroke="black"/>
+        <path id="hb1" d="M325 700.491L778.999 700.491" stroke="black"/>
+        <path id="lv2" d="M778.507 700L778.507 398.003" stroke="black"/>
+        <path id="lv2_2" d="M719 700L719 432" stroke="black"/>
+        <path id="Vector 1" d="M778.5 400C531 544 465 496 326 451.388" stroke="black"/>
+        </g></svg>
+
 </div>

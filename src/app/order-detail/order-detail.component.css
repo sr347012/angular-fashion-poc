@@ -1,4 +1,6 @@
-
+.tabGroup{
+    width: 50%;
+}
 .in-fields {
    margin-left: 50px;
    margin-top: 50px;
@@ -35,7 +37,12 @@ input {
     left: 50%; */
     /* transform: translate(-50%,-50%); */
 }
-
+.graph {
+        position: absolute;
+        right: 10%;
+        top:0px;
+    
+}
 #rightArc {
     /* stroke-dasharray: 10px; */
 }
